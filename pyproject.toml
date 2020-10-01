@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "memeparser"
+version = "0.1.0"
+description = "Parses MEME TF bindingsite files into an MemeParsed object"
+authors = ["Gwang Jin Kim <gwang.jin.kim.phd@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+numpy = "^1.16"
+os = 
+[tool.poetry.dev-dependencies]
+pytest = "^3.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

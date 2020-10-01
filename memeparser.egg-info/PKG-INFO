@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: memeparser
+Version: 0.1.0
+Summary: Parses MEME TF bindingsite files into an MemeParsed object
+Home-page: UNKNOWN
+Author: Gwang Jin Kim
+Author-email: gwang.jin.kim.phd@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5,<4.0
