@@ -4,4 +4,5 @@ memeparser/__init__.py
 memeparser.egg-info/PKG-INFO
 memeparser.egg-info/SOURCES.txt
 memeparser.egg-info/dependency_links.txt
+memeparser.egg-info/requires.txt
 memeparser.egg-info/top_level.txt

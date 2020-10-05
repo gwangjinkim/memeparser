@@ -48,6 +48,24 @@ class MemeParser:
             raise StopIteration
         
 
+def parse_all_meme(jaspar_dir_path):
+    meme_fpaths = glob.glob(pathname=os.path.join(jaspar_dir_path, 
+                                                  "*.meme"), 
+                            recursive=True)
+    d = {}
+    for fpath in meme_fpaths:
+        meme = MemeParser(fpath) 
+        if "(var." in meme.name:
+            name = meme.name.split("(var.")[0]
+            d[name] = meme
+        elif "::" in meme.name:
+            names = meme.name.split("::")
+            for nm in names:
+                d[nm] = meme
+        else:
+            d[meme.name] = meme
+    return d
+
 # the url however does not lead to plain text
 # the properties are all properties not beginning with "__"
 # iterator iterates over self.values.

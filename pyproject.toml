@@ -7,7 +7,7 @@ authors = ["Gwang Jin Kim <gwang.jin.kim.phd@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.5"
 numpy = "^1.16"
-os = 
+ 
 [tool.poetry.dev-dependencies]
 pytest = "^3.2"
 
